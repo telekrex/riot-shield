@@ -1,18 +1,29 @@
 #!/usr/bin/env python3
 import sys
 from platform import system
+
 hosts = 'C:\\Windows\\System32\\drivers\\etc\\hosts' if system() == 'Windows' else '/etc/hosts'
+
 try:
-    if str(sys.argv[1]) in ['active', 'activate', 'enable', 'enabled', 'start', 'go', 'on']:
+    # if the provided arg is to "enable" the muting, (forced lowercase)
+    # then set target variable to the content of the 'hosts muted' file
+    if str(sys.argv[1]).lower() in ['active', 'activate', 'enable', 'enabled', 'start', 'go', 'on']:
         target = 'hosts muted'
-        print('Enabling hosts muted')
+
     else:
+        # if anything other than "enable" was asked for in arg,
+        # then we assume "disable" and set target to content
+        # of 'hosts default' file
         target = 'hosts default'
-        print('Resetting hosts to default')
+
+    # with target set, we open the system hosts file
+    # and replace it with the content of target
     with open(target, 'r') as file:
         contents = file.read()
     with open(hosts, 'w') as file:
         file.write(contents)
-    print('Hosts contents updated')
-except:
-    print('Invalid arguments')
+    # program will exit when finished
+
+except Exception as e:
+    # if something went wrong, show me
+    print(e)

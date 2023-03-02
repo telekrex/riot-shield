@@ -1,6 +1,26 @@
-# mute  
-A portable, browserless, no third-party host muter. Instantly disable or re-enable a selection of URLs on your local machine, underneath browser functionality.<br><br>
-Requirements: Python 3.6+<br><br>
-Double-click **mute.cmd** to turn on/enable. It will run **mute.py** with the `on` argument, and this will copy the contents of **hosts muted** to your computer's hosts file. What this does if you follow the 127.0.0.1 pattern provided from the repo (intended as a sample), is re-route any of the URLs on the right to the IP on the left. This works underneath any browser features, on all browsers. To customize, enter your own contents into the hosts muted file. Since this tool works by modifying a file, there's no program that needs to be running. It is simply on until turned off.<br><br>
-Double-click **unmute.cmd** to turn off/disable. This will do a similar thing to turning on, but instead uses **hosts default**, which is a file that contains the defaults you want. The sample in this repo contains the same content you will find on modern Windows computers, and it's recommended that you not really change this file. Only change it if you want something very specific to be in your defaults.<br><br>
-This should work on Windows and Linux automatically, unless your hosts file is located somewhere other than the standard location. If so, just modify **mute.py**. On Linux, run the python script with arguments `on` and `off` instead of the cmd files. On either platform, you will probably need to modify permissions on the hosts file before using this tool. You'll find it in the locations specified in **mute.py**.
+# Mute
+Instantly toggle disabling of specific websites on a local machine, underneath all browsers.
+
+
+## Getting Started
+Requires: *Python 3*  
+1. Install Python 3 if you don't have it
+2. Download or clone this repository
+3. You will need to enable read and write file permissions for the user that will use this, on the hosts file of the computer that will use this. Every computer has this file.  
+    
+ On Windows:  `C:\\Windows\\System32\\drivers\\etc\\hosts`  
+ On Linux:  `/etc/hosts`  
+
+## How to Use
+The host file on your computer tells web browsers if they need to re-route to a specific IP address for a given domain name, and it's typically used to add aliases to locally networked devices. What Mute does, is it uses Python to quickly and easily toggle between the default file and a custom file filled with new routes. This will not affect your web browsing for any websites you do not specify.  
+
+The file titled **hosts default** is a copy of Microsoft's default host file. It is recommended to leave this file alone. For Linux users, this won't affect you as Linux's default host file is empty, or close to it, and both operating systems use the file the same way.  
+
+The file titled **hosts muted** is a list of websites you want to prevent this computer from reaching. By default the hosts muted file is just filled with some common distracting websites. On your computer, fill this file however you want. I'm not sure why, but you have to list it twice in the format:  
+>127.0.0.1 www.website.com  
+>127.0.0.1 website.com  
+
+**mute.py** is responsible for turning the switch. You just turn it on or off, and the changes remain until you switch it again. There's no background program or anything.  
+
+On Linux: Open a terminal and run: `python3 mute.py on` to turn on, `python3 mute.py off` to turn off.  
+On Windows: Double click **mute.cmd** to turn on, **unmuted.cmd** to turn off, or use a terminal the same way as Linux.
