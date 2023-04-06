@@ -1,1 +1,1 @@
-python mute.py on
+python source/mute.py enable

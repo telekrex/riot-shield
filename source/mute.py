@@ -2,12 +2,15 @@
 import sys
 from platform import system
 
-hosts = 'C:\\Windows\\System32\\drivers\\etc\\hosts' if system() == 'Windows' else '/etc/hosts'
+if system() == 'Windows':
+    hosts = 'C:\\Windows\\System32\\drivers\\etc\\hosts'
+else:
+    hosts = '/etc/hosts'
 
 try:
     # if the provided arg is to "enable" the muting, (forced lowercase)
     # then set target variable to the content of the 'hosts muted' file
-    if str(sys.argv[1]).lower() in ['active', 'activate', 'enable', 'enabled', 'start', 'go', 'on']:
+    if str(sys.argv[1]).lower() in ['enable', 'start', 'on']:
         target = 'hosts muted'
 
     else:

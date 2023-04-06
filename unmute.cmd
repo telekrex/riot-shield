@@ -1,1 +1,1 @@
-python mute.py off
+python source/mute.py disable
