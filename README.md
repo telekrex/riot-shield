@@ -1,6 +1,7 @@
-# Mute
-Instantly toggle disabling of specific websites on a local machine, underneath all browsers.
+<center> <h1> Mute </h1> </center>
 
+Instantly toggle disabling of specific websites on a local machine, underneath all browsers.  
+Does not require any third party modules, just Python (3).  
 
 ## Getting Started
 Requires: *Python 3*  
