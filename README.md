@@ -25,14 +25,9 @@ Fill the contents of `hosts silenced` with a list of websites you wish to silenc
 
 `silencer.py` is responsible for turning the switch. Because all the program does is toggle the hosts list, the effects last until you switch it back. There's no background program or anything. There are multiple ways to do this.
 
-### Run the script manually (Linux)
-In a terminal set to the directory where Silencer lives, run: `python3 silencer.py on` to turn on, `python3 silencer off` to turn off.
-
-### Run the script manually (Windows)
-In a terminal set to the directory where Silencer lives, run: `python silencer.py on` to turn on, `python silencer off` to turn off.
-
-### Command Shortcut (Windows only)
-Double click `silence.cmd` to turn on, `unsilence.cmd` to turn off.
+- Manually on Linux: run: `python3 silencer.py on` to turn on, `python3 silencer off` to turn off.
+- Manually on Windows: run: `python silencer.py on` to turn on, `python silencer off` to turn off.
+- Cmd shortcut on Windows: Double click `silence.cmd` to turn on, `unsilence.cmd` to turn off.
 
 ## Credits
 All code written by telekrex. Please report any security vulnerabilities to telekrex@gmail.com.
