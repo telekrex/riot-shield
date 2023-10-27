@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# Author: telekrex
 import sys
 from platform import system
 
@@ -9,7 +10,7 @@ else:
 
 try:
     # if the provided arg is to "enable" the muting, (forced lowercase)
-    # then set target variable to the content of the 'hosts muted' file
+    # then set target variable to the content of the 'hosts silenced' file
     if str(sys.argv[1]).lower() in ['enable', 'start', 'on']:
         TARGET = 'hosts silenced'
 
