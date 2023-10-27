@@ -1,8 +1,8 @@
 <h1 align="center" style="margin-top: -10px"> Silencer </h1>
 <p align="center" style="width: 100;">
    Instantly disable websites on a local machine, underneath all browsers.<br>
-   Supported platforms: <img alt="Static Badge" src="https://img.shields.io/badge/Windows-blue"><img alt="Static Badge" src="https://img.shields.io/badge/Linux-orange"><br>
-   <img alt="Static Badge" src="https://img.shields.io/badge/Status-Complete-black">
+   <img alt="Static Badge" src="https://img.shields.io/badge/Windows-blue"> <img alt="Static Badge" src="https://img.shields.io/badge/Linux-orange"><br>
+   <img alt="Static Badge" src="https://img.shields.io/badge/Status-Complete-black"> <img alt="Static Badge" src="https://img.shields.io/badge/Linux-orange">   
 </p>
 
 ## Pre-Requisites
