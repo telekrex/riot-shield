@@ -1,10 +1,12 @@
-<h1 align="center" style="margin-top: -10px"> Silencer </h1>
+<h1 align="center" style="margin-top: -10px"> Mute </h1>
 <p align="center" style="width: 100;">
    Instantly disable websites on a local machine, underneath all browsers.<br><br>
    <img alt="Static Badge" src="https://img.shields.io/badge/Status-Complete-black">
    <img alt="Static Badge" src="https://img.shields.io/badge/Windows-blue">
    <img alt="Static Badge" src="https://img.shields.io/badge/Linux-orange">
 </p>
+
+Version 1 / 2023-12-28
 
 ## Pre-Requisites
 - Python 3
