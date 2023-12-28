@@ -1,1 +1,1 @@
-python mute.exe enable
+python mute.py enable
