@@ -1,9 +1,6 @@
 <h1 align="center" style="margin-top: -10px"> Mute </h1>
 <p align="center" style="width: 100;">
-   Instantly disable websites on a local machine, underneath all browsers.<br><br>
-   <img alt="Static Badge" src="https://img.shields.io/badge/Status-Complete-black">
-   <img alt="Static Badge" src="https://img.shields.io/badge/Windows-blue">
-   <img alt="Static Badge" src="https://img.shields.io/badge/Linux-orange">
+   A toggle switch for disabling a custom list of hosts (urls) on a local machine, underneath all browsers.<br><br>
 </p>
 
 Version 1 / 2023-12-28
@@ -33,4 +30,4 @@ Fill the contents of `hosts silenced` with a list of websites you wish to silenc
 - Cmd shortcut on Windows: Double click `silence.cmd` to turn on, `unsilence.cmd` to turn off.
 
 ## Credits
-All code written by telekrex. Please report any security vulnerabilities to telekrex@gmail.com.
+Written by telekrex under GPL-3.0 license
