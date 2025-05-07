@@ -1,1 +1,1 @@
-python3 mute.py enable
+python3 riot-shield.py enable
