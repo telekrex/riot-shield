@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-# Written by telekrex
-# under GPL-3.0 license
+# Riot Shield - domain blocker
+# Written by telekrex under GPL-3.0 license
 
 import sys
 from platform import system
