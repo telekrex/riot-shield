@@ -61,4 +61,4 @@ except Exception as e:
     # if something went wrong, show the user,
     print(e)
     # and might as well point user to a place to report.
-    print('\nPlease forward any issues to telerex@gmail.com')
+    print('\nPlease forward any issues to https://github.com/telekrex/riot-shield/issues')
