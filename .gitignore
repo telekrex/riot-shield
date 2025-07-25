@@ -1,9 +1,1 @@
 __pycache__/
-*.py[cod]
-*$py.class
-.Python
-build/
-dist/
-*.manifest
-*.spec
-__pycache__/
